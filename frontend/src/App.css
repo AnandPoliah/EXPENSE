@@ -1,0 +1,72 @@
+/* App.jsx Layout Styles */
+
+.app-container {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+/* Header/Navigation */
+.app-header {
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-md */
+  padding: 16px 24px; /* p-4 (Adjusted for better spacing) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-logo {
+  font-size: 20px; /* text-xl */
+  font-weight: bold;
+  color: #4f46e5; /* text-indigo-600 */
+  text-decoration: none;
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 16px; /* space-x-4 */
+  align-items: center;
+}
+
+.nav-link {
+  color: #4b5563; /* text-gray-600 */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #4f46e5; /* hover:text-indigo-600 */
+}
+
+.logout-button {
+  color: #ef4444; /* text-red-500 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.logout-button:hover {
+  color: #b91c1c; /* hover:text-red-700 */
+}
+
+/* Main Content Area */
+.app-main-content {
+  padding: 16px; /* p-4 */
+}
+
+@media (min-width: 640px) {
+  /* sm:p-6 */
+  .app-main-content {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg:p-8 */
+  .app-main-content {
+    padding: 32px;
+  }
+}

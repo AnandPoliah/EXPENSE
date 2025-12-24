@@ -1,0 +1,121 @@
+/* Base styles for the entire app, you might put these in index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+/* AuthPage.jsx Styles */
+
+.auth-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb; /* bg-gray-50 */
+}
+
+.auth-form-card {
+  max-width: 448px; /* max-w-md */
+  width: 100%;
+  padding: 32px; /* p-8 */
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  border-radius: 8px; /* rounded-lg */
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* space-y-6 */
+}
+
+.auth-title {
+  margin-top: 24px; /* mt-6 */
+  text-align: center;
+  font-size: 30px; /* text-3xl */
+  font-weight: 800; /* font-extrabold */
+  color: #111827; /* text-gray-900 */
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-6 */
+  margin-top: 32px; /* mt-8 */
+}
+
+.form-input {
+  appearance: none;
+  border-radius: 6px; /* rounded-md */
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 12px; /* px-3 py-2 */
+  border: 1px solid #d1d5db; /* border border-gray-300 */
+  color: #111827; /* text-gray-900 */
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input::placeholder {
+  color: #6b7280; /* placeholder-gray-500 */
+}
+
+.form-input:focus {
+  border-color: #4f46e5; /* focus:border-indigo-500 */
+  box-shadow: 0 0 0 1px #4f46e5, 0 0 0 1px #4f46e5; /* focus:ring-indigo-500 */
+}
+
+.form-error-message {
+  color: #ef4444; /* text-red-500 */
+  font-size: 14px; /* text-sm */
+  margin-top: 4px;
+}
+
+.form-submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px; /* py-2 px-4 */
+  border: 1px solid transparent;
+  font-size: 14px; /* text-sm */
+  font-weight: 500; /* font-medium */
+  border-radius: 6px; /* rounded-md */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+/* Primary Button Styling (Used by submit button) */
+.primary-button {
+  background-color: #4f46e5; /* bg-indigo-600 */
+}
+
+.primary-button:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+.form-submit-button:disabled,
+.primary-button:disabled {
+  opacity: 0.5; /* disabled:opacity-50 */
+  cursor: not-allowed;
+}
+
+.auth-switch-link-container {
+  text-align: center;
+  font-size: 14px; /* text-sm */
+}
+
+.auth-switch-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 500; /* font-medium */
+  color: #4f46e5; /* text-indigo-600 */
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.auth-switch-link:hover {
+  color: #6366f1; /* hover:text-indigo-500 */
+  text-decoration: underline;
+}

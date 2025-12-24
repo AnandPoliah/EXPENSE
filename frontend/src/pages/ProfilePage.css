@@ -1,0 +1,141 @@
+/* ProfilePage.jsx Styles */
+
+.profile-container {
+    max-width: 1024px; /* max-w-5xl */
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.page-title {
+    font-size: 30px; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    color: #1f2937; /* text-gray-800 */
+    margin-bottom: 32px; /* mb-8 */
+    text-align: center;
+}
+
+/* Status Messages */
+.status-message {
+    display: flex;
+    align-items: center;
+    padding: 12px; /* p-3 */
+    margin-bottom: 24px; /* mb-6 */
+    border-radius: 8px; /* rounded-lg */
+    font-weight: 500;
+    gap: 8px;
+}
+
+.success-status {
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #047857; /* text-green-700 */
+    border: 1px solid #a7f3d0;
+}
+
+.error-status {
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #b91c1c; /* text-red-700 */
+    border: 1px solid #fca5a5;
+}
+
+.status-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px; /* gap-8 */
+}
+
+@media (min-width: 1024px) { /* lg: */
+    .profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.profile-card {
+    background-color: #ffffff; /* bg-white */
+    padding: 24px; /* p-6 */
+    border-radius: 12px; /* rounded-xl */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-md */
+    border: 1px solid #e5e7eb;
+}
+
+.card-title {
+    font-size: 20px; /* text-xl */
+    font-weight: 700; /* font-bold */
+    color: #1f2937; /* text-gray-800 */
+    margin-bottom: 24px; /* mb-6 */
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e7ff; /* border-indigo-100 */
+    display: flex;
+    align-items: center;
+}
+
+.icon-left {
+    margin-right: 8px; /* mr-2 */
+    color: #4f46e5;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* space-y-4 */
+}
+
+.form-group {
+    /* uses same styles as transaction form group */
+}
+
+.form-label {
+    display: block;
+    font-size: 14px; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 6px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1f2937;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+    box-shadow: 0 0 0 1px #4f46e5;
+}
+
+.submit-button {
+    margin-top: 16px; /* mt-4 */
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.15s, opacity 0.15s;
+    cursor: pointer;
+    border: none;
+}
+
+/* Primary Button Styling (from AuthPage/TransactionForm) */
+.primary-button {
+    background-color: #4f46e5; /* bg-indigo-600 */
+    color: white;
+}
+
+.primary-button:hover:not(:disabled) {
+    background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+.submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
